@@ -1,25 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
-.gradient-border {
-    position: relative;
-    background: transparent;
-    border: 2px solid transparent;
-    z-index: 1;
-    overflow: hidden;
-}
-
-.gradient-border::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to right, #7928CA, #FF0080);
-    z-index: -1;
-    border-radius: inherit;
-    transform: scale(1.1);
-}
